@@ -10,17 +10,16 @@ body{
     margin:0px;
     font-family: "Roboto", sans-serif;
 }
-header{
+header, main{
     background-color: #f2f2f2;
 }
 #haut-de-page .logo img{
     font-family: "Shrikhand", cursive;
     width: 200px;
-    margin-left: 20%;
+    margin-left: 28%;
 }
 #haut-de-page h1{
     background-color: white;
-    height: 52px;
 }
 #haut-de-page .localisation{
     position: relative;
@@ -46,7 +45,6 @@ header{
     background-color: #f2f2f2;
 }
 #haut-de-page .reserver h3{
-    
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -56,11 +54,10 @@ header{
     font-size: 18px;
     font-weight: lighter;
 }
- button{
+.reserver button{
     height: 55px;
     width: 65%;
     border-radius: 50px;
-    color: white;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     border: none;
@@ -69,14 +66,18 @@ header{
     font-size: 15px;
     font-weight: bold;
 }
-#haut-de-page .reserver button span{
-    color: black;
+.reserver button a{
+    text-decoration: none;
+    color: white;
 }
-main{
-    margin: auto;
+.reserver button:hover{
+    box-shadow:  3px 3px 3px 2px lightgrey;
+    background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
 }
 #fonctionnement{
-    margin-left: 5%;
+    background-color: white;
+    padding-left: 5%;
+    padding-bottom: 40px;
 }
 #fonctionnement h1{
   font-weight: bold;
@@ -113,9 +114,9 @@ main{
 #fonctionnement .button .fa-solid{
     position: relative;
     left: -15px;
-color: grey;
-padding-right: 20px;
-font-size: 25px;
+    color: grey;
+    padding-right: 20px;
+    font-size: 25px;
 }
 #fonctionnement .button:hover{
     background-color:#f7f0ff ; 
@@ -127,7 +128,7 @@ font-size: 25px;
 #fonctionnement .button span{
     position: relative;
     left: -15px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
 }
 #fonctionnement .button:hover span{
@@ -139,20 +140,17 @@ font-size: 25px;
     background-color: #99e2d0;
     color: #31926d;
     position: relative;
-    top: -121%;
-    right: -67%;
+    right: -70%;
+    top: -180px;
     text-align: center;
     padding-top: 8px;
 }
 #restaurants{
     width: 100%;
-    background-color: #f2f2f2;
-    margin-top: 70px;
     padding: 20px;
 }
 #restaurants h1{
     font-size: 26px;
-    padding-top: 18px;
     margin-left: 1%;
 }
 .cartes-restaurants{
@@ -163,7 +161,6 @@ background-color: white;
 width: 100%;
 height: 270px;
 border-radius: 20px;
-margin-bottom: 20px;
 }
 .carte a{
     text-decoration: none;
@@ -183,55 +180,53 @@ margin-bottom: 20px;
     border-radius: 20px 20px 0 0;
 }
 .carte .carte-nom{
-   padding-inline: 20px;
+   padding-inline: 15px;
+   line-height: 1;
 }
 .carte .lieu{
     position: relative;
-    top: -65px;
+    top: -15px;
     font-weight: lighter;
 }
-.carte .carte-nom i.fa-regular {
-  display: block;
-  display: flex;
-  justify-content: end;
+i.fa-regular {
   position: relative;
-  top: -35px;
-  font-size: 28px;
+  right: -85%;
+  top: -50px;
+  font-size: 22px;
   color: black;
 }
-.carte .carte-nom i.fa-regular:hover{
+i.fa-regular:active{
     background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
     color:transparent; 
     transition: 50ms;
-    
+    cursor: pointer;
 }
 footer{
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: black;
     color: white;
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
-footer .logo img{
+.bas-de-page{
     font-family: "Shrikhand";
-    width: 120px;
-    filter: invert(100%);
-    filter:grayscale (-100%);
-    filter:contrast(100%) ;
-    -webkit-filter: invert(100%);
+    font-size: 18px;
     margin-left: 40px;
     
 }
 footer ul li{
 list-style-type: none;
 padding: 5px;
-font-size: 18px;
+font-size: 15px;
 font-weight: bold;
 }
 footer .fa-solid{
     padding-right: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Menus*/
@@ -240,7 +235,6 @@ header{
     background-color: white;
 }
 header h1{
-  
     display: flex;
     align-items: center;
 }
@@ -251,25 +245,37 @@ header .logo .fa-solid{
     font-size: 25px;
     padding-left: 15px;
 }
-.logo img{
+main{
+    background-color: #f2f2f2;
+}
+.logo-restaurant{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 10px;   
+}
+.logo-restaurant img{
     width: 200px;
-    margin-left: 35px;
+    margin-left: 20%;
+}
+.logo-restaurant .fa-solid{
+    color: black;
+    margin-left:20px;
+    font-size: 25px;
 }
 .photo img{
-    position: relative;
-    top: -10px;
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
 #menu{
-   position: relative;
-   top: -65px;
    background-color: #f2f2f2;
+   position: relative;
+   top: -50px;
    border-radius: 45px 45px 0 0; 
    padding-top: 10px;
    padding-left: 20px;
-   height: 1350px;
+   height: auto;
    width: 100%;
 }
 #menu h1{
@@ -283,9 +289,9 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 position: relative;
-top: -68px;
+top: -60px;
 right: -130px ;
-font-size: 30px;
+font-size: 25px;
 color: black;
 }
 #menu .carte{
@@ -302,10 +308,44 @@ color: black;
 }
 #menu .plat{
     width: 95%;
-    height: 80px;
+    height: 75px;
     background-color: white;
     border-radius: 20px;
     padding-left: 5px;   
+}
+#menu .plat span{
+    display: none;
+}
+#menu .plat:hover span{
+    display: inline;
+}
+#menu .plat:hover{
+    width: 80%;
+    text-transform: ; /* -----*/
+}
+#menu .animation{
+    height: 80px;
+    width: 20%;
+    border-radius: 0 20px 20px 0;
+    background-color: #99e2d0;
+    position: relative;
+    top: -93px;
+    right: -80%;
+
+}
+#menu .animation:hover{
+
+
+}
+#menu .animation .fa-solid{
+    max-width: 20px;
+    width: 20px;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    font-size: 25px;
 }
 #menu .plat p{
     font-size: 16px;
@@ -315,7 +355,7 @@ color: black;
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
-}
+}  
 #menu .plat b{
     padding-right: 25px;
 }
@@ -323,22 +363,28 @@ color: black;
 padding-left: 10px;
 padding-top: 15px;
 }
-#menu .plat:hover{
-    transform: ;
-    width: 80%;
-    background: #99e2d0 -webkit-image-tranform (25% right);
-}
 #menu button{
-    font-size: 16px;
-    height: 45px;
-    width: 56%;
+    font-size:16px;
+    height:45px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 50px;
+    background: #9356dc;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#menu button a{
+    text-decoration: none;
+    color: white;
+}
+#menu button:hover{
+    box-shadow:  3px 3px 3px 2px lightgrey;
+    background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
 }
 .entrees, .plats, .desserts{
     padding-bottom: 30px;
 }
-footer .menu{
-    position: relative;
-    top: -85px;
-    padding-top: 25px;
-    background-color: black;
-}
+
