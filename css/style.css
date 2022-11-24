@@ -33,7 +33,7 @@ header, main{
     box-shadow: #cfcdcd 0px 3px 3px 0px inset;
     border-bottom: #f2f2f2 1px solid;
 }
-    #haut-de-page h2 .fa-solid{
+    #haut-de-page .fa-solid{
     padding-right: 20px;
     font-size: 21px;
 }
@@ -49,28 +49,26 @@ header, main{
     font-size: 30px;
     font-weight: bold;
 }
-#haut-de-page .reserver p{
+#haut-de-page .reserver span{
     text-align: center;
     font-size: 18px;
     font-weight: lighter;
 }
-.reserver button{
+#haut-de-page .reserver h4{
     height: 55px;
     width: 65%;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    border: none;
     margin-left: 18%;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-}
-.reserver button a{
-    text-decoration: none;
+    padding-top: 15px;
+    text-align: center;
     color: white;
 }
-.reserver button:hover{
+#haut-de-page .reserver h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
     background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
 }
@@ -109,7 +107,7 @@ header, main{
     border-radius: 50px;
     background-color: #9356dc;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 #fonctionnement .button .fa-solid{
     position: relative;
@@ -128,8 +126,8 @@ header, main{
 #fonctionnement .button span{
     position: relative;
     left: -15px;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: bold;
 }
 #fonctionnement .button:hover span{
     color:black;
@@ -363,24 +361,21 @@ color: black;
 padding-left: 10px;
 padding-top: 15px;
 }
-#menu button{
-    font-size:16px;
-    height:45px;
+#menu h4{
+    height: 55px;
     width: 50%;
-    margin-left: 25%;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    border: none;
+    margin-left: 21%;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-}
-#menu button a{
-    text-decoration: none;
+    padding-top: 15px;
+    text-align: center;
     color: white;
 }
-#menu button:hover{
+#menu h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
     background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
 }
