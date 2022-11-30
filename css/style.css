@@ -18,13 +18,15 @@ main{
 }
 #haut-de-page h1{
     font-family: "Shrikhand", cursive;
-    font-size: 35px;
+    height: 55px;
+    font-size: 26px;
+    padding: 10px;
     text-align: center;
     background-color: white;
 }
 #haut-de-page .localisation{
-    height: 60px;
-    padding: 18px;
+    height: 50px;
+    padding: 12px;
     text-align: center;
     font-size: 20px;
     font-weight: normal;
@@ -34,30 +36,32 @@ main{
 }
 #haut-de-page .fa-solid{
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .reserver{
     background-color: #f2f2f2;
-    padding-bottom: 50px;
+    padding: 50px;
+    padding: ;
 }
 .reserver h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 .reserver p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
     text-align: center;
     
 }
 .reserver h3{
     height: 52px;
-    width: 70%;
+    width: 95%;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg,#ff79da 0%, #9356dc 100%);
-    margin-left: 15%;
+    margin-left: 5%;
     margin-top: 25px;
     font-size: 16px;
     font-weight: bold;
@@ -79,6 +83,7 @@ background-color: white;
 }
 #fonctionnement h1{
   font-weight: bold;
+  margin-bottom: 20px;
 }
 #fonctionnement a{
     text-decoration: none;
@@ -90,7 +95,7 @@ background-color: white;
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #f2f2f2;
     border-radius: 25px;
     text-align: center;
@@ -100,20 +105,20 @@ background-color: white;
 #fonctionnement .button p{
     position: relative;
     left: -40px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding-top: 6px;
     border-radius: 50px;
     background-color: #9356dc;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
 }
 #fonctionnement .button .fa-solid{
     position: relative;
     left: -15px;
     color: grey;
     padding-right: 20px;
-    font-size: 25px;
+    font-size: 19px;
 }
 #fonctionnement .button:hover{
     background-color:#f7f0ff ; 
@@ -125,7 +130,7 @@ background-color: white;
 #fonctionnement .button span{
     position: relative;
     left: -15px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
 }
 #fonctionnement .button:hover span{
@@ -243,24 +248,21 @@ footer a{
     color: white;
 }
 
-/* Menus*/
-
-
-
+                                       /* Menus*/
 .logo-restaurant {
-    height: 60px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .logo-restaurant img{
-    width: 200px;
+    width: 150px;
 }
 .logo-restaurant .fa-solid{
     color: black;
     font-size: 20px;
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 .photo img{
     height: 300px;
@@ -280,8 +282,8 @@ footer a{
 #menu h1{
     font-family:"Shrikhand"; 
     font-weight: normal;
-    font-size: 30px;
-    padding: 15px;
+    font-size: 24px;
+    padding: 10px;
 }
 #menu a{
     text-decoration: none;
@@ -289,9 +291,9 @@ footer a{
 }
 #menu .coeur{
 position: relative;
-top: -50px;
+top: -40px;
 right: -75% ;
-font-size: 25px;
+font-size: 24px;
 }
 #menu .coeur .fa-regular{
 position: relative;
