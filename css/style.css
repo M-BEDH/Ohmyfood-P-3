@@ -188,20 +188,21 @@ border-radius: 20px;
     right: -80%;
     top: -50px;
     font-size: 22px;
-}
+}                               /* Couleur deu Coeur ...*/
 .carte .coeur .fa-regular{
     position: relative;
     right: -27px;
-
+}
+    .carte .coeur:hover .fa-regular{
      background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color:transparent; 
     transition: 50ms;
-    
+    transform: scale(1.5) ;
 }
  .carte .coeur .fa-solid{
-    
+    color: white;
 }
 .carte .coeur:hover .fa-solid{ 
     background: linear-gradient(90deg rgba(255,121,218,1)  0%, rgba(147,86,220,1) 100%);
@@ -210,7 +211,7 @@ border-radius: 20px;
     
     transition: 50ms;
     
- 
+                                 /* Fin couleur Coeur ... */
 }
 footer{
     width: 100%;
@@ -280,7 +281,7 @@ footer a{
     font-size: 30px;
     padding: 15px;
 }
-#menu i.fa-regular{
+#menu .coeur i.fa-regular{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
@@ -289,7 +290,14 @@ top: 33px;
 right: 35px ;
 font-size: 25px;
 color: black;
-}
+}                                  /* Animation Coeur */
+#menu .coeur:hover i.fa-regular{
+    background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent; 
+    transition: 50ms;
+}                                  /* Fin Animation Coeur */
 #menu h2{
     font-size: 18px;
     font-weight: lighter;
@@ -305,7 +313,8 @@ color: black;
     height: 75px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;   
+    
 }
 #menu .plat p{
     font-size: 18px;
@@ -317,16 +326,16 @@ color: black;
 #menu .plat b{
     padding-right: 20px;
 }
-
+                            /* animation check */
 #menu .plat .check{
     height: 75px;
     width: 18%;
     border-radius: 0 20px 20px 0;
-    background-color:#f2f2f2;
+    background-color: transparent;
     position: relative;
     top: -60px;
     right: -95%;
-    z-index: -1;
+    
 } 
 #menu .plat .check .icone .fa-solid{
     width: 26px;
@@ -339,17 +348,15 @@ color: black;
 #menu .plat:hover .check{
     background-color: #99e2d0;
     transform: translate(-55px,0);
-    transition: transform 600ms linear; 
-      /*...*/
-    z-index:1 ;
+    transition: transform 600ms linear;     
 }  
 #menu .plat:hover .check .icone .fa-solid{
  transform:rotate(1turn);
- transition: transform 600ms linear;   /* ...*/
+ transition: transform 600ms linear;   
 
 
 }
-  /*animation check */
+                      /* fin animation check */
 
 #menu h3{
 padding-left: 10px;
@@ -372,10 +379,21 @@ padding-top: 15px;
 #menu h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
     opacity: 0.8;
-}
-.entrees, .plats, .desserts{
-padding-right: 5px;
+}                         
+
+                            /* Apparition progressive.. */
+#menu .entrees, .plats, .desserts{
+   padding-right: 5px;
    margin-bottom: 20px;
    margin-top: 10px;
 }
+
+    @keyframes progressif {
+        0%   { margin-top: -70px;opacity:0; }
+        80% { margin-top: 0px;opacity:0.3; }
+        100%{ margin-top: 0px; opacity: 1;
+        }
+        }
+    .plat {animation: progressif 2s ease-out 1s forwards;
+    }
 
