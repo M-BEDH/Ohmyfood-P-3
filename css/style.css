@@ -3,29 +3,27 @@
 
 *, ::before, ::after{
     box-sizing: border-box;
+    margin: 0;
 }
 body{
     width: 100vw;
-    height: 100%;
-    margin:0px;
     font-family: "Roboto", sans-serif;
 }
-header, main{
-    background-color: #f2f2f2;
+header{
+    background-color: white;
 }
-#haut-de-page .logo img{
-    font-family: "Shrikhand", cursive;
-    width: 200px;
-    margin-left: 28%;
+main{
+    background-color:#f2f2f2;
 }
 #haut-de-page h1{
+    font-family: "Shrikhand", cursive;
+    font-size: 35px;
+    text-align: center;
     background-color: white;
 }
 #haut-de-page .localisation{
-    position: relative;
-    top: -18px;
-    height: 65px;
-    padding: 15px;
+    height: 60px;
+    padding: 18px;
     text-align: center;
     font-size: 20px;
     font-weight: normal;
@@ -33,49 +31,50 @@ header, main{
     box-shadow: #cfcdcd 0px 3px 3px 0px inset;
     border-bottom: #f2f2f2 1px solid;
 }
-    #haut-de-page .fa-solid{
+#haut-de-page .fa-solid{
     padding-right: 20px;
-    font-size: 21px;
+    font-size: 20px;
 }
-#haut-de-page .reserver{
-   position: relative;
-   top: -50px;
-   padding: 20px;
-    height: 340px;
+.reserver{
     background-color: #f2f2f2;
+    padding-bottom: 50px;
 }
-#haut-de-page .reserver h3{
+.reserver h2{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
 }
-#haut-de-page .reserver span{
-    text-align: center;
+.reserver p{
     font-size: 18px;
     font-weight: lighter;
+    text-align: center;
+    
 }
-#haut-de-page .reserver h4{
-    height: 55px;
-    width: 65%;
+.reserver h3{
+    height: 52px;
+    width: 70%;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    margin-left: 18%;
-    margin-top: 20px;
-    font-size: 18px;
+    margin-left: 15%;
+    margin-top: 25px;
+    font-size: 16px;
     font-weight: bold;
     padding-top: 15px;
     text-align: center;
     color: white;
 }
-#haut-de-page .reserver h4:hover{
-    box-shadow:  3px 3px 3px 2px lightgrey;
-    background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
+.reserver h3:hover{
+opacity: 0.8;
+box-shadow:  3px 3px 3px 2px lightgrey;
 }
 #fonctionnement{
-    background-color: white;
-    padding-left: 5%;
-    padding-bottom: 40px;
+background-color: white;
+   padding-top: 30px;
+   padding-right: 15px;
+   padding-left: 15px;
+   padding-bottom: 50px;
+   
 }
 #fonctionnement h1{
   font-weight: bold;
@@ -85,12 +84,11 @@ header, main{
     color: black;
 }
 #fonctionnement .button{
-    margin-bottom: 10px;
-    margin-left: 1%;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 80px;
     background-color: #f2f2f2;
     border-radius: 25px;
@@ -126,7 +124,7 @@ header, main{
 #fonctionnement .button span{
     position: relative;
     left: -15px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 #fonctionnement .button:hover span{
@@ -138,8 +136,8 @@ header, main{
     background-color: #99e2d0;
     color: #31926d;
     position: relative;
-    right: -70%;
-    top: -180px;
+    right: -73%;
+    top: -170px;
     text-align: center;
     padding-top: 8px;
 }
@@ -157,7 +155,7 @@ header, main{
 .carte{
 background-color: white; 
 width: 100%;
-height: 270px;
+height: 250px;
 border-radius: 20px;
 }
 .carte a{
@@ -165,11 +163,12 @@ border-radius: 20px;
 }
 .carte h2, p{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .carte .carte-image{
     width: 100%;
-    height: 190px;
+    height: 180px;
 }
 .carte .carte-image img{
     object-fit: cover;
@@ -178,26 +177,40 @@ border-radius: 20px;
     border-radius: 20px 20px 0 0;
 }
 .carte .carte-nom{
-   padding-inline: 15px;
-   line-height: 1;
+    padding: 12px;
 }
 .carte .lieu{
-    position: relative;
-    top: -15px;
+    padding-top: 3px;
     font-weight: lighter;
 }
-i.fa-regular {
-  position: relative;
-  right: -85%;
-  top: -50px;
-  font-size: 22px;
-  color: black;
+.carte .coeur{
+    position: relative;
+    right: -80%;
+    top: -50px;
+    font-size: 22px;
 }
-i.fa-regular:active{
-    background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+.carte .coeur .fa-regular{
+    position: relative;
+    right: -27px;
+
+     background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
     color:transparent; 
     transition: 50ms;
-    cursor: pointer;
+    
+}
+ .carte .coeur .fa-solid{
+    
+}
+.carte .coeur:hover .fa-solid{ 
+    background: linear-gradient(90deg rgba(255,121,218,1)  0%, rgba(147,86,220,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    transition: 50ms;
+    
+ 
 }
 footer{
     width: 100%;
@@ -229,37 +242,22 @@ footer a{
 
 /* Menus*/
 
-header{
-    background-color: white;
-}
-header h1{
-    display: flex;
-    align-items: center;
-}
-header h1 a{
-    color: black;
-}
-header .logo .fa-solid{
-    font-size: 25px;
-    padding-left: 15px;
-}
-main{
-    background-color: #f2f2f2;
-}
-.logo-restaurant{
-    display: flex;
-    align-items: center;
+
+
+.logo-restaurant {
     height: 60px;
-    padding: 10px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .logo-restaurant img{
     width: 200px;
-    margin-left: 20%;
 }
 .logo-restaurant .fa-solid{
     color: black;
-    margin-left:20px;
-    font-size: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
 .photo img{
     height: 300px;
@@ -271,115 +269,113 @@ main{
    position: relative;
    top: -50px;
    border-radius: 45px 45px 0 0; 
-   padding-top: 10px;
-   padding-left: 20px;
+   padding: 10px;
    height: auto;
    width: 100%;
+
 }
 #menu h1{
     font-family:"Shrikhand"; 
     font-weight: normal;
     font-size: 30px;
+    padding: 15px;
 }
 #menu i.fa-regular{
-display: block;
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-position: relative;
-top: -60px;
-right: -130px ;
+position: absolute;
+top: 33px;
+right: 35px ;
 font-size: 25px;
 color: black;
-}
-#menu .carte{
-    position: relative;
-    top: -30px;
 }
 #menu h2{
     font-size: 18px;
     font-weight: lighter;
+    padding-bottom: 20px;
 }
 #menu h2 span{
     border-bottom-style: solid;
     border-bottom-color: #99e2d0;
+    padding-bottom: 5px;
 }
 #menu .plat{
-    width: 95%;
+    max-width: 100%;
     height: 75px;
     background-color: white;
     border-radius: 20px;
-    padding-left: 5px;   
-}
-#menu .plat span{
-    display: none;
-}
-#menu .plat:hover span{
-    display: inline;
-}
-#menu .plat:hover{
-    width: 80%;
-    text-transform: ; /* -----*/
-}
-#menu .animation{
-    height: 80px;
-    width: 20%;
-    border-radius: 0 20px 20px 0;
-    background-color: #99e2d0;
-    position: relative;
-    top: -93px;
-    right: -80%;
-
-}
-#menu .animation:hover{
-
-
-}
-#menu .animation .fa-solid{
-    max-width: 20px;
-    width: 20px;
-    border-radius: 50px;
-    color: white;
-    position: absolute;
-    bottom: 28px;
-    right: 40px;
-    font-size: 25px;
+    margin-bottom: 15px;    
 }
 #menu .plat p{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: lighter;
-    position: relative;
-    top: -13px;
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
 }  
 #menu .plat b{
-    padding-right: 25px;
+    padding-right: 20px;
 }
+
+#menu .plat .check{
+    height: 75px;
+    width: 18%;
+    border-radius: 0 20px 20px 0;
+    background-color:#f2f2f2;
+    position: relative;
+    top: -60px;
+    right: -95%;
+    z-index: -1;
+} 
+#menu .plat .check .icone .fa-solid{
+    width: 26px;
+    color: #f2f2f2;
+    font-size: 24px;
+   position: relative;
+   bottom: -25px;
+   right: -31%;
+}
+#menu .plat:hover .check{
+    background-color: #99e2d0;
+    transform: translate(-55px,0);
+    transition: transform 600ms linear; 
+      /*...*/
+    z-index:1 ;
+}  
+#menu .plat:hover .check .icone .fa-solid{
+ transform:rotate(1turn);
+ transition: transform 600ms linear;   /* ...*/
+
+
+}
+  /*animation check */
+
 #menu h3{
 padding-left: 10px;
 padding-top: 15px;
 }
 #menu h4{
-    height: 55px;
-    width: 50%;
+    height: 52px;
+    width: 55%;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     margin-left: 21%;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
-    padding-top: 15px;
+    padding-top: 16px;
     text-align: center;
     color: white;
 }
 #menu h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
-    background: linear-gradient(175deg, rgb(243, 150, 217) 0%, rgb(182, 121, 239) 100%);
+    opacity: 0.8;
 }
 .entrees, .plats, .desserts{
-    padding-bottom: 30px;
+padding-right: 5px;
+   margin-bottom: 20px;
+   margin-top: 10px;
 }
 
