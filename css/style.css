@@ -44,6 +44,9 @@ main{
     padding: 50px;
     padding: ;
 }
+.reserver a{
+    text-decoration: none;
+}
 .reserver h2{
     text-align: center;
     font-size: 25px;
@@ -108,7 +111,7 @@ background-color: white;
     left: -40px;
     width: 25px;
     height: 25px;
-    padding-top: 6px;
+    padding-top: 5px;
     border-radius: 50px;
     background-color: #9356dc;
     color: white;
@@ -227,19 +230,16 @@ footer{
     background-color: black;
     color: white;
     padding-top: 25px;
+    padding-left: 20px;
     padding-bottom: 10px;
-}
-.bas-de-page{
     font-family: "Shrikhand";
     font-size: 18px;
-    margin-left: 40px;
     
 }
 footer ul li{
 list-style-type: none;
 padding: 5px;
 font-size: 15px;
-font-weight: bold;
 }
 footer .fa-solid{
     padding-right: 10px;
@@ -275,9 +275,10 @@ footer a{
    position: relative;
    top: -50px;
    border-radius: 45px 45px 0 0; 
-   padding: 10px;
+   padding: 15px;
    height: auto;
-   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
 
 }
 #menu h1{
@@ -289,6 +290,7 @@ footer a{
 #menu a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 #menu .coeur{
 position: relative;
@@ -321,7 +323,7 @@ right: -32px;
 }
                                   /* Fin Animation Coeur */
 #menu h2{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
     padding-bottom: 20px;
 }
@@ -330,57 +332,78 @@ right: -32px;
     border-bottom-color: #99e2d0;
     padding-bottom: 5px;
 }
-#menu .plat{
-    max-width: 100%;
-    height: 75px;
+#menu .plat {
+    width: 100%;
+    height: 70px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 15px;   
-    
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px 3px #f2f2f2;
 }
+
 #menu .plat p{
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
     font-weight: lighter;
     padding-left: 10px;
-    display: flex;
-    justify-content: space-between;
-}  
-#menu .plat b{
-    padding-right: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+   
+} 
+#menu .plat p:hover{
+    width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+.prix{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -20px;
+    padding-right: 10px;
+
+}
+.prix:hover{
+   margin-right: 70px; 
+   
+  
+}
+
+
                             /* animation check */
 #menu .plat .check{
-    height: 75px;
-    width: 22%;
+    height: 70px;
+    width: 20%;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
-    position: relative;
-    top: -60px;
-    right: -95%;
-    
 } 
 #menu .plat .check .icone .fa-solid{
-    width: 26px;
-    color: #f2f2f2;
-    font-size: 24px;
-   position: relative;
-   bottom: -25px;
-   right: -30%;
+   width: 26px;
+   color: transparent
 }
 #menu .plat:hover .check{
     background-color: #99e2d0;
     transform: translate(-55px,0);
-    transition: transform 500ms linear;     
+    transition: transform 300ms linear; 
+    position: relative;
+    top: -74px;
+    right: -97%; 
 }  
 #menu .plat:hover .check .icone .fa-solid{
  transform:rotate(1turn);
- transition: transform 500ms linear;   
-
-
+ transition: transform 300ms linear;   
+ color: white;
+ font-size: 24px;
+ position: relative;
+ bottom: -23px;
+ right: -31%;
 }
                       /* fin animation check */
 
 #menu h3{
+font-size: 18px;
 padding-left: 10px;
 padding-top: 15px;
 }
@@ -391,7 +414,7 @@ padding-top: 15px;
     background: #9356dc;
     background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     margin-left: 21%;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 17px;
     font-weight: bold;
     padding-top: 16px;
@@ -403,22 +426,23 @@ padding-top: 15px;
     opacity: 0.8;
 }                         
 
-                            /* Apparition progressive.. */
-#menu .entrees, .plats, .desserts{
-   padding-right: 5px;
-   margin-bottom: 20px;
-   margin-top: 10px;
-}
+          /* Apparition progressive.. */
 
     @keyframes progressif {
-        0%  { margin-top: -70px;opacity:0; }
-        80% { margin-top: 0px;opacity:0.3; }
+        0%  { margin-top: 60px;opacity:0;}
+        50% { margin-top: 30px;opacity:0;}
         100%{ margin-top: 0px; opacity: 1; }
         }
-.plat{
-    animation: progressif 1s ease-out 500ms forwards; opacity: 0;
+.choix1{
+    animation: progressif 0.8s linear 300ms forwards; opacity: 0;
 }
-@keyframes transition {
-    0% { }
-    
+.choix2{
+animation: progressif 1.4s linear 300ms forwards; opacity: 0;
+}
+.choix3{
+animation: progressif 2s linear 300ms forwards; opacity: 0;
+}
+
+.entrees, .plats, .desserts{
+    animation: progressif 0.5s linear 300ms forwards; opacity: 0;
 }

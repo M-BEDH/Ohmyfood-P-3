@@ -1,46 +1,53 @@
 #div-loader{
+    opacity: 0;
+    position: absolute;
     width: 100%;
-    height: 250%;
+    height: 2072px;
     background-color: whitesmoke;
+    animation: loader 1ms;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+    z-index: -100;
 }
 .loader{
     position: absolute;
     opacity: 0;
     width: 100%;
     height: 100px;
-    top: 50%;
+    top: 15%;
     font-size: 20px;
     text-align: center;
     animation: loader 1ms;
-    animation-delay: 5.5s;
+    animation-delay: 4.5s;
     animation-fill-mode: both;
 }
 .loader1{
 color: #9356dc;
 animation: animation 1s;
-animation-delay: 50ms;
-animation-iteration-count: 5;
+animation-delay: 60ms;
+animation-iteration-count: 4;
 }
 .loader2 {
 color:#ff79da;
 animation: animation 1s;
-animation-delay: 150ms;
-animation-iteration-count: 5;
+animation-delay: 160ms;
+animation-iteration-count: 4;
 }
 .loader3{
 color:#99e2d0;
 animation: animation 1s;
-animation-delay: 250ms;
-animation-iteration-count: 5;
+animation-delay: 260ms;
+animation-iteration-count: 4;
 }
 @keyframes loader {
-    0% {opacity: 1;}
-    100%{opacity: 0;}
+    0% {opacity: 0.9; z-index: 10000;}
+    100%{opacity: 0; z-index: -100;}
+    
 }
 @keyframes animation {
-    0% {opacity: 1;}
-    25%{opacity: 0.8;}
-    50%{ opacity: 0.5;}
-    75%{opacity: 0.2;}
-    100%{opacity: 0;}
+    0% {opacity: 1; }
+    25%{opacity: 0.8; }
+    50%{ opacity: 0.5; }
+    75%{opacity: 0.2; }
+    100%{opacity: 0; }
 }
