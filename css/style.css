@@ -325,88 +325,100 @@ right: -32px;
 #menu h2{
     font-size: 17px;
     font-weight: lighter;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
 }
 #menu h2 span{
     border-bottom-style: solid;
     border-bottom-color: #99e2d0;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
-#menu .plat {
+#menu .choix1, .choix2, .choix3 {
     width: 100%;
     height: 70px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 5px 3px #f2f2f2;
+    margin-bottom: 15px;
+    box-shadow: #e7e2e2 3px 2px 3px 5px;
 }
-
 #menu .plat p{
-    width: 100%;
+    width: 80%;
     font-size: 16px;
     font-weight: lighter;
-    padding-left: 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-   
+    padding-left: 15px;
 } 
-#menu .plat p:hover{
-    width: 70%;
+#menu  .plat:hover p{
+    width: 60%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.prix{
+#menu .plat h3{
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+    padding-top: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-left: 15px;
+}
+#menu .plat h3:hover{
+    width:50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.plat .prix{
+    height: 85px;
+    width: 90%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: relative;
-    top: -20px;
+    top: -60px;
     padding-right: 10px;
-
 }
-.prix:hover{
-   margin-right: 70px; 
-   
-  
+.plat .prix:hover{
+    width: 85%;
 }
-
 
                             /* animation check */
-#menu .plat .check{
+#menu .check{
     height: 70px;
-    width: 20%;
+    width: 16%;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
+    position: relative;
+   top: -144px;
+    right: -90%;
+    border-radius: 0 20px 20px 0;
+
 } 
-#menu .plat .check .icone .fa-solid{
+#menu .check .icone {
    width: 26px;
-   color: transparent
+   color: transparent;
+   position: relative;
+   bottom: -23px;
+   right: -31%;
 }
 #menu .plat:hover .check{
     background-color: #99e2d0;
-    transform: translate(-55px,0);
-    transition: transform 300ms linear; 
-    position: relative;
-    top: -74px;
-    right: -97%; 
+    transform: translate(-25px,0px);
+    transition: transform 400ms;
+    
 }  
 #menu .plat:hover .check .icone .fa-solid{
  transform:rotate(1turn);
- transition: transform 300ms linear;   
+ transition: transform 400ms linear;   
  color: white;
  font-size: 24px;
- position: relative;
- bottom: -23px;
- right: -31%;
+
 }
                       /* fin animation check */
 
-#menu h3{
-font-size: 18px;
-padding-left: 10px;
-padding-top: 15px;
-}
 #menu h4{
     height: 52px;
     width: 55%;
@@ -426,7 +438,7 @@ padding-top: 15px;
     opacity: 0.8;
 }                         
 
-          /* Apparition progressive.. */
+          /* Apparition progressive.. 
 
     @keyframes progressif {
         0%  { margin-top: 60px;opacity:0;}
