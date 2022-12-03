@@ -2,10 +2,10 @@
     opacity: 0;
     position: absolute;
     width: 100%;
-    height: 2072px;
+    height: 2200px;
     background-color: whitesmoke;
     animation: loader 1ms;
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
     animation-fill-mode: both;
     z-index: -100;
 }
@@ -18,26 +18,26 @@
     font-size: 20px;
     text-align: center;
     animation: loader 1ms;
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
     animation-fill-mode: both;
 }
 .loader1{
 color: #9356dc;
 animation: animation 1s;
 animation-delay: 60ms;
-animation-iteration-count: 4;
+animation-iteration-count: 3;
 }
 .loader2 {
 color:#ff79da;
 animation: animation 1s;
 animation-delay: 160ms;
-animation-iteration-count: 4;
+animation-iteration-count: 3;
 }
 .loader3{
 color:#99e2d0;
 animation: animation 1s;
 animation-delay: 260ms;
-animation-iteration-count: 4;
+animation-iteration-count: 3;
 }
 @keyframes loader {
     0% {opacity: 0.9; z-index: 10000;}
