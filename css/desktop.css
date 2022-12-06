@@ -1,0 +1,547 @@
+html{
+    overflow-x: hidden;
+}
+body{
+        box-sizing: border-box;
+    }
+   main{
+    background-color: #f2f2f2;
+   }
+    #haut-de-page h1{
+        font-family: "Shrikhand", cursive;
+        padding-top: 20px;
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        margin: 0;
+    }
+    #haut-de-page .localisation{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: normal;
+        background-color: #e7e2e2;
+        box-shadow: #cfcdcd 0px 3px 3px 0px inset;
+        border-bottom: #f2f2f2 1px solid;
+        border-radius: 20px 20px 0 0;
+    }
+    #haut-de-page .fa-solid{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    .reserver{
+        background-color: #f2f2f2;
+        padding: 50px;
+        border-radius: 0 0 20px 20px ;
+    }
+    .reserver a{
+        text-decoration: none;
+    }
+
+.reserver h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.reserver p{
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+.reserver h3{
+    width: 30%;
+    margin: auto;
+    border-radius: 50px;
+    background: #9356dc;
+    background: linear-gradient(175deg,#ff79da 0%, #9356dc 100%);
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.reserver h3:hover{
+opacity: 0.8;
+box-shadow:  3px 3px 3px 2px lightgrey;
+}
+#fonctionnement{
+    background-color: white;
+   padding-right: 350px;
+   padding-left: 350px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+#fonctionnement h1{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#fonctionnement a{
+    text-decoration: none;
+    color: black;
+}
+#fonctionnement .button{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    box-shadow:  10px 7px 8px 0px lightgrey;
+}
+#fonctionnement .button p{
+    position: relative;
+    left: -35px;
+    width: 16px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #9356dc;
+    color: white;
+    font-size: 13px;
+}
+#fonctionnement .button .fa-solid{
+    color: grey;
+    font-size: 25px;
+    margin-right: 80px;
+    margin-left: 15px;
+}
+#fonctionnement .button:hover{
+    background-color:#f7f0ff ; 
+    transition: 50ms;
+}
+#fonctionnement .button:hover .fa-solid{
+    color:#9356dc
+}
+#fonctionnement .button span{   
+    font-size: 20px;
+    font-weight: bold;
+}
+#fonctionnement .button:hover span{
+    color:black;
+}
+.nouveau{
+    width: 80px;
+    background-color: #99e2d0;
+    color: #31926d;
+    position: relative;
+    right: -70%;
+    top: -170px;
+    text-align: center;
+    padding: 4px;
+}
+#restaurants{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    border-radius: 20px 20px 0 0;
+}
+#restaurants h1{
+    width: 90%;
+    font-size: 30px;
+    margin-left: 5%;
+}
+.carte{
+background-color: white; 
+width: 40%;
+border-radius: 20px;
+margin: auto;
+margin-bottom: 30px;
+}
+.carte a{
+    text-decoration: none;
+    color: black;
+}
+.carte h2, p{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.carte .carte-image{
+    width: 100%;
+    height: 180px;
+}
+.carte .carte-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.carte .carte-nom{
+    padding: 12px;
+}
+.carte .lieu{
+    padding-top: 3px;
+    font-weight: lighter;
+}
+.carte .coeur{
+    position: relative;
+    right: -80%;
+    top: -50px;
+}                            
+.carte .coeur .fa-regular{
+    position: relative;
+    right: -22px;
+    font-size: 22px;
+}                                      /* Couleur du Coeur ...*/   
+.carte .coeur:hover .fa-regular{
+    background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+.carte .coeur .fa-solid{
+    color: transparent;
+    font-size: 22px;
+}
+.carte .coeur:hover .fa-solid{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;
+    transition: 1s;
+                                 /* Fin couleur Coeur ... */
+}
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-family: "Shrikhand";
+    font-size: 25px;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+footer ul li{
+    font-family: "Roboto";
+list-style-type: none;
+font-size: 15px;
+padding: 2px;
+}
+footer .fa-solid{
+    padding-right: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+                                       /* Menus*/
+                                      
+.logo-restaurant {
+    width: 25%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-restaurant img{
+    width: 200px;
+}
+.logo-restaurant .fa-solid{
+    color: black;
+    font-size: 20px;
+    margin-right: 70px;
+}
+.photo img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+#menu{
+   background-color: #f2f2f2;
+   position: relative;
+   top: -50px;
+   border-radius: 45px 45px 0 0; 
+   padding-left: 15px;
+   padding-right: 0px;
+   padding-top: 15px;
+}
+#menu h1{
+    font-family:"Shrikhand"; 
+    font-weight: normal;
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+}
+#menu .coeur{
+position: relative;
+top: -62px;
+right: -65%;
+font-size: 24px;
+}
+#menu .coeur a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#menu .coeur .fa-regular{
+position: relative;
+right: -23px;
+}   
+                           /* Animation coeur ..*/
+#menu .coeur:hover .fa-regular{
+    background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+#menu .coeur .fa-solid{
+    color: transparent;
+}
+#menu .coeur:hover .fa-solid{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;
+    transition: 1s;
+}
+                                  /* Fin Animation Coeur */
+#menu h2{
+    width: 60%;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin: auto;
+}
+#menu h2 span{
+    border-bottom-style: solid;
+    border-bottom-color: #99e2d0;
+}
+#menu .choix1, .choix2, .choix3, .choix4 {
+    width: 50%;
+    max-height: 70px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    box-shadow: #e7e2e2 3px 2px 3px 5px;
+}
+#menu .plat{
+    max-height: 70px;
+    padding-left: 15px;
+}
+#menu .plat h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+    padding-top: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#menu .plat p{
+    width: 80%;
+    margin: 0;
+    font-size: 14px;
+    font-weight: lighter;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} 
+#menu  .plat:hover p{
+    width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#menu .plat h3:hover{
+    width:50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.plat .prix{
+    height: 80px;
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: -56px;
+}
+.plat .prix:hover{
+    width: 85%;
+}
+.plat .prix b{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+                            /* animation check */
+#menu .check{
+    height: 70px;
+    width: 90px;
+    border-radius: 0 20px 20px 0;
+    background-color: transparent;
+    position: relative;
+    top: -136px;
+    right: -95%;
+    border-radius: 0 20px 20px 0;
+} 
+#menu .check .icone {
+   width: 26px;
+   color: transparent;
+   position: relative;
+   bottom: -23px;
+   right: -35%;
+}
+#menu .plat:hover .check{
+    background-color: #99e2d0;
+    transform: translate(-42px,0px);
+    transition: transform 200ms;
+    
+}  
+#menu .plat:hover .check .icone .fa-solid{
+ transform:rotate(1turn);
+ transition: transform 300ms linear;   
+ color: white;
+ font-size: 22px;
+
+}
+                      /* fin animation check */
+
+#menu h4{
+    width: 20%;
+    border-radius: 50px;
+    margin: auto;
+    background: #9356dc;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+#menu a{
+    text-decoration: none;
+}
+#menu h4:hover{
+    box-shadow:  3px 3px 3px 2px lightgrey;
+    opacity: 0.8;
+}                         
+.entrees, .plats{
+    padding-bottom: 10px;
+}
+
+
+@keyframes progressif {
+    0%  { margin-top: 60px;opacity:0;}
+    50% { margin-top: 30px;opacity:0;}
+    100%{ margin-top: 0px; opacity:1;}
+    }
+.choix1{
+animation: progressif 0.8s linear 300ms forwards; opacity: 0;
+}
+.choix2{
+animation: progressif 1.1s linear 300ms forwards; opacity: 0;
+}
+.choix3{
+animation: progressif 1.4s linear 300ms forwards; opacity: 0;
+}
+.choix4{
+animation: progressif 1.7s linear 300ms forwards; opacity: 0;
+}
+.plats .choix1 {
+animation: progressif 1.8s linear 400ms forwards; opacity: 0;
+}
+.plats .choix2{
+animation: progressif 2.1s linear 400ms forwards; opacity: 0;
+}
+.plats .choix3{
+animation: progressif 2.4s linear 400ms forwards; opacity: 0;
+}
+.desserts .choix1{
+animation: progressif 2.8s linear 500ms forwards; opacity: 0;
+}
+.desserts .choix2{
+animation: progressif 3.1s linear 500ms forwards; opacity: 0;
+}
+.desserts .choix3{
+animation: progressif 3.4s linear 500ms forwards; opacity: 0;
+}
+.entrees h2{
+animation: progressif 0.8s linear 300ms forwards; opacity: 0;
+}
+.plats h2{
+animation: progressif 1.8s linear 300ms forwards; opacity: 0; 
+}
+.desserts h2{
+animation: progressif 2.7s linear 300ms forwards; opacity: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                           /*Menus*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
