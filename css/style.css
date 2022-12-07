@@ -86,55 +86,55 @@ opacity: 0.8;
 box-shadow:  3px 3px 3px 2px lightgrey;
 }
 #fonctionnement{
-   max-width: 100%;
+   width: 100%;
    display: flex;
    flex-direction: column;
    background-color: white;
    padding-top: 30px;
-   padding-right: 15px;
-   padding-left: 15px;
    padding-bottom: 50px;
+   padding-left: 5px;
+   padding-right: 5px;
    margin: 0;
    
 }
 #fonctionnement h1{
-  font-weight: bold;
+  margin-left: 4%;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 #fonctionnement a{
-    width: 100%;
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: column;
+}#fonctionnement .div-button{
+    width: 90%;
 }
 #fonctionnement .button{
+    width: 100%;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
     border-radius: 25px;
     text-align: center;
-    padding: 40px;
     box-shadow:  10px 7px 8px 0px lightgrey;
 }
 #fonctionnement .button p{
     padding: 0;
-    position: absolute;
-    left: 5px;
-    width: 24px;
-    height: 24px;
-    padding-top: 4px;
+    position: relative;
+    left: -8px;
+    width: 23px;
+    padding: 5px;
     border-radius: 100px;
     background-color: #9356dc;
     color: white;
-    font-size: 14px;
+    font-size: 11px;
 }
 #fonctionnement .button .fa-solid{
-    position: absolute;
-    left: 50px;
     color: grey;
     font-size: 20px;
+    padding-right: 20px;
 }
 #fonctionnement .button:hover{
     background-color:#f7f0ff ; 
@@ -144,8 +144,6 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     color:#9356dc
 }
 #fonctionnement .button span{
-   position: absolute;
-   left: 90px;
     font-size: 16px;
     font-weight: bold;
 }

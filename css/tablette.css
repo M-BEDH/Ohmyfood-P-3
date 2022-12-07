@@ -11,10 +11,10 @@
     border-radius: 0;
 }
 .réserver h2{
-    font-size: 20px;
+    font-size: 18px;
 }
 .reserver p{
-    font-size: 18px;
+    font-size: 16px;
 }
 .reserver h3{
     width: 35%;
@@ -24,44 +24,45 @@
 }
 
     #fonctionnement{
+        width: 100%;
        background-color: white;
-       padding-right: 150px;
-       padding-left: 150px;
        padding-top: 40px;
        padding-bottom: 50px;
     }
     #fonctionnement h1{
-      font-weight: bold;
+        width: 50%;
       margin-bottom: 20px;
     }
     #fonctionnement a{
         text-decoration: none;
         color: black;
     }
+    #fonctionnement .div-button{
+        width: 40% ;
+    }
     #fonctionnement .button{
+        width: 100%;
         margin-bottom: 15px;
         display: flex;
         align-items: center;
         background-color: #f2f2f2;
         border-radius: 25px;
         text-align: center;
-        padding: 20px;
         box-shadow:  10px 7px 8px 0px lightgrey;
     }
     #fonctionnement .button p{
         position: relative;
-        left: -30px;
+        left: -10px;
         width: 15px;
         padding: 5px;
         border-radius: 100px;
         background-color: #9356dc;
         color: white;
-        font-size: 11px;
+        font-size: 12px;
     }
     #fonctionnement .button .fa-solid{
         color: grey;
-        font-size: 20px;
-        margin-right: 50px;
+        font-size: 18px;
     }
     #fonctionnement .button:hover{
         background-color:#f7f0ff ; 
@@ -71,7 +72,7 @@
         color:#9356dc
     }
     #fonctionnement .button span{   
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bold;
     }
     #fonctionnement .button:hover span{
@@ -99,7 +100,7 @@
     background-color: #99e2d0;
     color: #31926d;
     position: relative;
-    right: -78%;
+    right: -75%;
     top: -170px;
     text-align: center;
     padding: 4px;
@@ -118,7 +119,7 @@
     width: 50%;
 }
 #menu .check{
-    width: 61px;
+    width: 65px;
 }
 .plat .prix:hover{
     width: 75%;
