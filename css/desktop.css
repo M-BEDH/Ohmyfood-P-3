@@ -2,6 +2,8 @@ html{
     overflow-x: hidden;
 }
 body{
+        max-width: 100vw;
+        margin: auto;
         box-sizing: border-box;
     }
    main{
@@ -26,7 +28,6 @@ body{
         background-color: #e7e2e2;
         box-shadow: #cfcdcd 0px 3px 3px 0px inset;
         border-bottom: #f2f2f2 1px solid;
-        border-radius: 20px 20px 0 0;
     }
     #haut-de-page .fa-solid{
         padding-right: 20px;
@@ -72,8 +73,8 @@ box-shadow:  3px 3px 3px 2px lightgrey;
 }
 #fonctionnement{
     background-color: white;
-   padding-right: 350px;
-   padding-left: 350px;
+   padding-right: 600px;
+   padding-left: 600px;
    padding-top: 50px;
    padding-bottom: 50px;
 }
@@ -149,7 +150,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
 }
 .carte{
 background-color: white; 
-width: 40%;
+width: 30%;
 border-radius: 20px;
 margin: auto;
 margin-bottom: 30px;
@@ -160,7 +161,7 @@ margin-bottom: 30px;
 }
 .carte h2, p{
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
 }
@@ -261,7 +262,6 @@ footer a{
     height: 300px;
     width: 100%;
     object-fit: cover;
-    border-radius: 20px 20px 0 0;
 }
 #menu{
    background-color: #f2f2f2;
@@ -281,7 +281,7 @@ footer a{
 }
 #menu .coeur{
 position: relative;
-top: -62px;
+top: -65px;
 right: -65%;
 font-size: 24px;
 }

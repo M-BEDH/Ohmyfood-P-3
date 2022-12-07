@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400&family=Shrikhand&display=swap");
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
 html{
     overflow-x: hidden;
@@ -213,7 +213,7 @@ margin-bottom: 0;
 }                            
 .carte .coeur .fa-regular{
     position: relative;
-    right: -25px;
+    right: -22px;
     font-size: 22px;  
 }                                      /* Couleur du Coeur ...*/   
 .carte .coeur:active .fa-regular{
@@ -267,8 +267,9 @@ footer a{
 
                                        /* Menus*/
 .logo-restaurant {
-    width: 100%;
-    height: 55px;
+    width: 80%;
+    height: 60px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,13 +280,13 @@ footer a{
 .logo-restaurant .fa-solid{
     color: black;
     font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 .photo img{
     height: 300px;
     width: 100%;
     object-fit: cover;
+    border-radius: 0px;
 }
 #menu{
    display: flex;
@@ -411,11 +412,15 @@ right: -23px;
 .plat .prix b{
     margin-top: 15px;
     font-size: 14px;
-}
+}                             /* -------
+.scale-in-hor-right {
+	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}                              -------*/
 
                             /* animation check */
 #menu .check{
-    height: 70px;
+    height: 71px;
     width: 19%;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
