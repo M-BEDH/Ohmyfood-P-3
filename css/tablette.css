@@ -29,7 +29,7 @@
        padding-top: 40px;
        padding-bottom: 50px;
     }
-    #fonctionnement h1{
+    #fonctionnement h4{
         width: 50%;
       margin-bottom: 20px;
     }
@@ -62,7 +62,7 @@
     }
     #fonctionnement .button .fa-solid{
         color: grey;
-        font-size: 18px;
+        font-size: 16px;
     }
     #fonctionnement .button:hover{
         background-color:#f7f0ff ; 
@@ -95,12 +95,12 @@
    right: -75%;
 }
 .nouveau{
-    width: 60px;
+    width: 70px;
     font-size: 13px;
     background-color: #99e2d0;
     color: #31926d;
     position: relative;
-    right: -75%;
+    right: -72%;
     top: -170px;
     text-align: center;
     padding: 4px;

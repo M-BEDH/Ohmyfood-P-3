@@ -8,7 +8,7 @@ body{
         max-width: 100vw;
         margin: auto;
         box-sizing: border-box;
-        font-weight: "Roboto", sans-serif;
+        font-family: "Roboto", sans-serif;
     }
    main{
     background-color: #f2f2f2;
@@ -16,7 +16,7 @@ body{
     #haut-de-page h1{
         font-family: "Shrikhand", cursive;
         padding-top: 20px;
-        font-size: 40px;
+        font-size: 30px;
         padding: 10px;
         text-align: center;
         background-color: white;
@@ -48,24 +48,24 @@ body{
 
 .reserver h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 .reserver p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: lighter;
     text-align: center;
     
 }
 .reserver h3{
-    width: 30%;
+    width: 20%;
     margin: auto;
     border-radius: 50px;
     background: #9356dc;
     background: linear-gradient(175deg,#ff79da 0%, #9356dc 100%);
     margin-top: 25px;
-    font-size: 16px;
+    font-size: 15px;
     padding: 15px;
     text-align: center;
     color: white;
@@ -80,17 +80,18 @@ box-shadow:  3px 3px 3px 2px lightgrey;
    padding-top: 50px;
    padding-bottom: 50px;
 }
-#fonctionnement h1{
-    width: 60%;
+#fonctionnement h4{
+    width: 30%;
     margin: auto;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 #fonctionnement a{
     text-decoration: none;
     color: black;
 }
 #fonctionnement .div-button{
-    width: 40%;
+    width: 30%;
     margin: auto;
 }
 #fonctionnement .button{
@@ -112,7 +113,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     border-radius: 100px;
     background-color: #9356dc;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
 }
 #fonctionnement .button .fa-solid{
     color: grey;
@@ -128,7 +129,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     color:#9356dc
 }
 #fonctionnement .button span{   
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 #fonctionnement .button:hover span{
@@ -138,6 +139,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     width: 80px;
     background-color: #99e2d0;
     color: #31926d;
+    font-size: 13px;
     position: relative;
     right: -70%;
     top: -170px;
@@ -145,6 +147,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     padding: 4px;
 }
 #restaurants{
+    margin: auto;
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
@@ -153,12 +156,13 @@ box-shadow:  3px 3px 3px 2px lightgrey;
 }
 #restaurants h1{
     width: 90%;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 5%;
 }
 .carte{
 background-color: white; 
-width: 30%;
+width: 20%;
+height: 250px;
 border-radius: 20px;
 margin: auto;
 margin-bottom: 30px;
@@ -169,7 +173,7 @@ margin-bottom: 30px;
 }
 .carte h2, p{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
 }
@@ -224,7 +228,7 @@ footer{
     color: white;
     padding-top: 25px;
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 5%;
     font-family: "Shrikhand";
     font-size: 25px;
 }
@@ -246,6 +250,10 @@ footer .fa-solid{
 footer a{
     text-decoration: none;
     color: white;
+}
+footer a:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
                                        /* Menus*/
