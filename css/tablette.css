@@ -5,10 +5,7 @@
         margin: 0;
     }
 #haut-de-page h1{
-    font-size: 30px;
-}
-#haut-de-page .localisation{
-    border-radius: 0;
+    font-size: 28px;
 }
 .réserver h2{
     font-size: 18px;
@@ -22,94 +19,58 @@
     margin: auto;
     margin-top: 30px;
 }
-
-    #fonctionnement{
-        width: 100%;
-       background-color: white;
-       padding-top: 40px;
-       padding-bottom: 50px;
-    }
-    #fonctionnement h4{
-        width: 50%;
-      margin-bottom: 20px;
-    }
-    #fonctionnement a{
-        text-decoration: none;
-        color: black;
-    }
-    #fonctionnement .div-button{
-        width: 50% ;
-    }
-    #fonctionnement .button{
-        width: 100%;
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        background-color: #f2f2f2;
-        border-radius: 25px;
-        text-align: center;
-        box-shadow:  10px 7px 8px 0px lightgrey;
-    }
-    #fonctionnement .button p{
-        position: relative;
-        left: -10px;
-        width: 15px;
-        padding: 5px;
-        border-radius: 100px;
-        background-color: #9356dc;
-        color: white;
-        font-size: 12px;
-    }
-    #fonctionnement .button .fa-solid{
-        color: grey;
-        font-size: 16px;
-    }
-    #fonctionnement .button:hover{
-        background-color:#f7f0ff ; 
-        transition: 50ms;
-    }
-    #fonctionnement .button:hover .fa-solid{
-        color:#9356dc
-    }
-    #fonctionnement .button span{   
-        font-size: 16px;
-        font-weight: bold;
-    }
-    #fonctionnement .button:hover span{
-        color:black;
-    }
-#restaurants h1{
-    font-size: 20px;
+#fonctionnement{
+    width: 100%;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#fonctionnement h3{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#fonctionnement .div-button{
+    width: 65% ;
+    margin: auto;
+}
+#fonctionnement .button{
+    width: 100%;
+}
+.nouveau{
+   position: relative;
+   right: -65%;
+}
+#restaurants{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+#restaurants h4{
+    width: 75%;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 .carte{
     width: 35%;
-    height: 250px;
+    margin: 15px;
 }
 .carte h2, p{
     font-size: 16px;
 }
 .carte .coeur{
-   position: relative;
-   right: -75%;
-}
-.nouveau{
-    width: 70px;
-    font-size: 13px;
-    background-color: #99e2d0;
-    color: #31926d;
     position: relative;
-    right: -72%;
-    top: -170px;
-    text-align: center;
-    padding: 4px;
-}
-.logo-restaurant{
-    width: 40%;
-}
+    right: -75%;
+ }
+                    /* Menus ..*/
+
 .logo-restaurant img{
     width: 180px;
+}
+.photo img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
 #menu .coeur{
     margin-left: 15px;
@@ -118,21 +79,14 @@
     font-size: 15px;
     width: 50%;
 }
-#menu .check{
-    width: 65px;
+
+footer .bas-de-page{
+    width: 80%;
+    margin: auto;
 }
-.plat .prix:hover{
-    width: 75%;
+footer ul{
+    width: 80%;
+    margin: auto;
 }
-
-
-
-
-
-
-
-
-
-    
 }
     

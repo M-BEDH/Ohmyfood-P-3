@@ -3,7 +3,7 @@
     opacity: 0;
     position: absolute;
     width: 100vw;
-    height: 2065px;
+    height: 1941px;
     background-color: whitesmoke;
     animation: loader 1ms;
     animation-delay: 3.5s;
@@ -53,3 +53,4 @@ animation-iteration-count: 3;
     75%{opacity: 0.2; }
     100%{opacity: 0; }
 }
+<link rel="stylesheet" href="css/loader.css">
