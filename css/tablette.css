@@ -1,8 +1,9 @@
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
 
-    body{
-        margin: 0;
+  
+  body{
+        margin: auto;
     }
 #haut-de-page h1{
     font-size: 28px;
@@ -15,7 +16,7 @@
 }
 .reserver h3{
     width: 35%;
-    font-size: 14px;
+    font-size: 16px;
     margin: auto;
     margin-top: 30px;
 }
@@ -26,12 +27,12 @@
     padding-bottom: 50px;
 }
 #fonctionnement h3{
-    width: 65%;
+    width: 70%;
     margin: auto;
     margin-bottom: 20px;
 }
 #fonctionnement .div-button{
-    width: 65% ;
+    width: 70% ;
     margin: auto;
 }
 #fonctionnement .button{
@@ -53,7 +54,8 @@
 }
 .carte{
     width: 35%;
-    margin: 15px;
+    margin: 25px;
+    box-shadow: grey 1px 1px 3px 1px;
 }
 .carte h2, p{
     font-size: 16px;
@@ -62,6 +64,24 @@
     position: relative;
     right: -75%;
  }
+.carte .coeur:hover .normal .fa-regular{ 
+    color: transparent; 
+    cursor: pointer;  
+    animation: remplissage 1.5s linear; 
+}                                 
+.carte .coeur .transition .fa-heart{
+    font-weight: bold;
+    color: white; 
+}
+.carte .coeur:hover .transition .fa-heart{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;  
+    animation: remplissage 1.5s linear;
+} 
+
                     /* Menus ..*/
 
 .logo-restaurant img{
@@ -75,18 +95,41 @@
 #menu .coeur{
     margin-left: 15px;
 }
+#menu .coeur:hover .normal .fa-regular{ 
+    color: transparent; 
+    cursor: pointer; 
+    animation: remplissage 1.5s linear; 
+}                                 
+
+#menu .coeur .transition .fa-heart{
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+#menu .coeur:hover .transition .fa-heart{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;  
+    animation: remplissage 1.5s linear;
+} 
 #menu h2{
     font-size: 15px;
     width: 50%;
 }
+#menu h4{
+    width: 40%;
+}
 
 footer .bas-de-page{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 footer ul{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 }
     
+

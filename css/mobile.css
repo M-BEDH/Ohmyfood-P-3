@@ -170,7 +170,6 @@ height: 250px;
 border-radius: 20px;
 margin-top: 25px;
 margin-bottom: 0;
-overflow: hidden;
 }
 .carte a{
     text-decoration: none;
@@ -204,36 +203,37 @@ overflow: hidden;
     right: -80%;
     top: -50px;
 }                            
-.carte .coeur .fa-regular{
+.carte .coeur .normal .fa-regular{
     position: relative;
-    right: -22px;
-    font-size: 22px;  
+    right: -24px;
+    font-size: 24px; 
 }         
                              /* Couleur du Coeur ...*/   
-.coeur:active .fa-regular{
-    background: linear-gradient(90deg, #9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: remplissage 1s;
+.carte .coeur:active .normal .fa-regular{ 
+    color: transparent; 
+    cursor: pointer; 
+    pointer-events: auto;  
+    animation: remplissage 1.8s linear; 
+}                                 
+.carte .coeur .transition .fa-heart{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;  
 }
-.coeur .fa-solid{
-    color: transparent;
-    font-size: 22px;
-}
-.coeur:active .fa-solid{                            
-   background: linear-gradient(90deg, #9356dc, #ff79da);
+.carte .coeur:active .transition .fa-heart{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
-    cursor: pointer;
-    pointer-events: visible;
-    animation: remplissage 1s ;
-                                 /* Fin couleur Coeur ... */
+    color: transparent; 
+    cursor: pointer; 
+    pointer-events: auto;  
+    animation: remplissage 1.8s linear;
 }
 @keyframes remplissage {
-    0% { background: 0;}
-    50% { background: 50%;}
-    100% { background: 100%;}
+    0% {opacity: 0.1; }
+    100% {opacity: 1; }    
 }
+
 footer{
     width: 100%;
     height: auto;
@@ -322,37 +322,34 @@ right: -75% ;
 font-size: 24px;
 color: black;
 }
-#menu .coeur .fa-regular{
+#menu .coeur .normal .fa-regular{
 position: relative;
+font-size: 24px;
 right: -23px;
 }  
                          /* Couleur du Coeur ...*/
-.coeur:active .fa-regular{
-    background: linear-gradient(180deg, #9356dc, #ff79da);
-    background-clip: text;
-    -webkit-background-clip: text;
+
+#menu .coeur:active .normal .fa-regular{ 
     color: transparent; 
-    animation: remplissage 1s;
+    cursor: pointer; 
+    pointer-events: auto;  
+    animation: remplissage 1.8s linear; 
+}                                 
+#menu .coeur .transition .fa-heart{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f2f2f2;  
 }
-.coeur .fa-solid{
-    color: transparent;
-    font-size: 22px;
-}
-.coeur:active .fa-solid{                            
+#menu .coeur:active .transition .fa-heart{                            
    background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
     color: transparent; 
-    cursor: pointer;
-    pointer-events:painted;
-    animation: remplissage 0.5s ease-in;
-                                 /* Fin couleur Coeur ... */
+    cursor: pointer; 
+    pointer-events: auto;  
+    animation: remplissage 1.8s linear;
 }
-@keyframes remplissage {
-    0% { background: 0%;}
-    50% { background: 25%;}
-    100% { background: 100%;}
-}
+
 #menu h2{
     width: 100%;
     font-size: 17px;
@@ -418,11 +415,7 @@ right: -23px;
 }  
 .plat .prix:hover{
     width: 90%;
-}                          /* -------
-.scale-in-hor-right {
-	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}                              -------*/
+}                   
 
                             /* animation check */
 #menu .check{
@@ -477,8 +470,7 @@ h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
     opacity: 0.8;
 }                         
-
-       /*
+                                       /* Animation Menus..*/
 
     @keyframes progressif {
         0%  { margin-top: 60px;opacity:0;}

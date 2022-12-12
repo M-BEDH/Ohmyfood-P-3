@@ -1,6 +1,121 @@
 @media screen and (min-width:992px) and (max-width: 1920px)
 {
 
+body{
+    margin: auto;
+}
+.reserver h3{
+    width: 45%;
+    font-size: 18px;
+}
+#fonctionnement{
+    padding: 15px;
+}
+#fonctionnement h3{
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-size: 20px;
+}
+#fonctionnement .button span{
+    font-size: 18px;
+}
+.nouveau{
+    position: relative;
+    right: -65%;
+}
+#restaurants{
+display: flex;
+flex-wrap: wrap;
+}
+#restaurants h4{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+    box-shadow: none;
+}
+.carte{
+    width: 40%;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 40px;
+    box-shadow: grey 1px 1px 3px 1px;
+}
+.carte .coeur:hover .normal .fa-regular{ 
+    color: transparent; 
+    cursor: pointer; 
+    animation: remplissage 1.5s linear; 
+}                                 
+.carte .coeur .transition .fa-heart{
+    font-weight: bold;
+    color: white;
+}
+.carte .coeur:hover .transition .fa-heart{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;  
+    animation: remplissage 1.5s linear;
+} 
+footer .bas-de-page{
+    width: 90%;
+    margin: auto;
+}
+footer ul{
+    width: 90%;
+    margin: auto;
+}   
+#menu .coeur:hover .normal .fa-regular{ 
+    color: transparent; 
+    cursor: pointer; 
+    animation: remplissage 1.5s linear; 
+}                                 
+#menu .coeur .transition .fa-heart{
+    font-weight: bold;
+    color: #f2f2f2;
+}
+#menu .coeur:hover .transition .fa-heart{                            
+   background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
+    color: transparent; 
+    cursor: pointer;  
+    animation: remplissage 1.5s linear;
+} 
+#menu h4{
+    width: 40%;
+}
+
+
+
+#div-loader{
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 1600px;
+    background-color: whitesmoke;
+    animation: loader 1ms;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    z-index: -100;
+}
+.loader{
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100px;
+    top: 15%;
+    font-size: 20px;
+    text-align: center;
+    animation: loader 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+}
+}
+
 
 
     
@@ -17,8 +132,7 @@
 
 
 
-                           /*Menus*/
-
+                          
 
 
 
