@@ -83,7 +83,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
    display: flex;
    flex-direction: column;
    background-color: white;
-   padding: 20px; 
+   padding: 30px; 
    margin: 0;
 }
 #fonctionnement h3{
@@ -149,7 +149,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
     background-color: #99e2d0;
     color: #31926d;
     position: relative;
-    right: -68%;
+    right: -80%;
     top: -170px;
     text-align: center;
     padding: 4px;
@@ -157,6 +157,7 @@ box-shadow:  3px 3px 3px 2px lightgrey;
 #restaurants{
     padding: 20px;
     margin: 0;
+    box-shadow: none;
 }
 #restaurants h4{
     font-size: 26px;
@@ -170,6 +171,7 @@ height: 250px;
 border-radius: 20px;
 margin-top: 25px;
 margin-bottom: 0;
+overflow: hidden;
 }
 .carte a{
     text-decoration: none;
@@ -205,35 +207,37 @@ margin-bottom: 0;
 }                            
 .carte .coeur .normal .fa-regular{
     position: relative;
-    right: -24px;
-    font-size: 24px; 
+    right: -22px;
+    font-size: 22px;  
 }         
-                             /* Couleur du Coeur ...*/   
-.carte .coeur:active .normal .fa-regular{ 
+                                                      /* Couleur du Coeur ..*/
+.coeur:active .normal .fa-regular{ 
+    background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer; 
-    pointer-events: auto;  
-    animation: remplissage 1.8s linear; 
+    pointer-events: auto;   
 }                                 
 .carte .coeur .transition .fa-heart{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
-    color: white;  
+    color:  white;  
 }
-.carte .coeur:active .transition .fa-heart{                            
+.coeur:active .transition .fa-heart{                            
    background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer; 
     pointer-events: auto;  
-    animation: remplissage 1.8s linear;
+    animation: remplissage 1s linear;
 }
 @keyframes remplissage {
     0% {opacity: 0.1; }
     100% {opacity: 1; }    
 }
-
+                                                     /* Fin Couleur Coeur..*/     
 footer{
     width: 100%;
     height: auto;
@@ -270,11 +274,11 @@ footer a:hover{
 
                                        /* Menus*/
 .logo-restaurant {
-    width: 70%;
+    width: 100%;
     height: 60px;
-    margin: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .logo-restaurant a{
     text-decoration: none;
@@ -309,47 +313,43 @@ footer a:hover{
     font-weight: normal;
     font-size: 24px;
     padding: 25px;
-}
-#menu coeur a{
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-}
+}                                        
 #menu .coeur{
-position: relative;
-top: -55px;
-right: -75% ;
-font-size: 24px;
-color: black;
-}
-#menu .coeur .normal .fa-regular{
-position: relative;
-font-size: 24px;
-right: -23px;
-}  
-                         /* Couleur du Coeur ...*/
-
-#menu .coeur:active .normal .fa-regular{ 
-    color: transparent; 
-    cursor: pointer; 
-    pointer-events: auto;  
-    animation: remplissage 1.8s linear; 
-}                                 
-#menu .coeur .transition .fa-heart{
+    position: relative;
+    top: -55px;
+    right: -75% ;
     font-size: 24px;
-    font-weight: bold;
-    color: #f2f2f2;  
-}
-#menu .coeur:active .transition .fa-heart{                            
-   background: linear-gradient(180deg, #9356dc, #ff79da);
-    background-clip: text;
-   -webkit-background-clip: text;
-    color: transparent; 
-    cursor: pointer; 
-    pointer-events: auto;  
-    animation: remplissage 1.8s linear;
-}
-
+    color: black;
+    }
+    #menu .coeur .normal .fa-regular{
+    position: relative;
+    font-size: 24px;
+    right: -23px;
+    }  
+                             /* Couleur du Coeur ...*/
+    
+    #menu .coeur:active .normal .fa-regular{ 
+        background: linear-gradient(180deg, #9356dc, #ff79da);
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent; 
+        cursor: pointer; 
+        pointer-events: auto;   
+    }                                 
+    #menu .coeur .transition .fa-heart{
+        font-size: 24px;
+        font-weight: bold;
+        color: #f2f2f2;  
+    }
+    #menu .coeur:active .transition .fa-heart{                            
+       background: linear-gradient(180deg, #9356dc, #ff79da);
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent; 
+        cursor: pointer; 
+        pointer-events: auto;  
+        animation: remplissage 0.8s linear;
+    }                                                                                 
 #menu h2{
     width: 100%;
     font-size: 17px;
@@ -366,6 +366,7 @@ right: -23px;
     overflow: hidden;
 }
 #menu .choix1, .choix2, .choix3, .choix4 {
+    max-width: 100%;
     height: 75px;
     background-color: white;
     border-radius: 20px;
@@ -373,9 +374,17 @@ right: -23px;
     box-shadow: #e7e2e2 3px 2px 3px 5px;
 }
 #menu .plat{
+    width: 100%;
     padding-left: 15px;
     height: 75px;
     display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#menu .plat:hover{
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 #menu .plat a{
     width: 100%;
@@ -389,6 +398,8 @@ right: -23px;
     overflow: hidden;
 }
 #menu .plat p{
+    display: flex;
+    justify-content: space-between;
     font-size: 14px;
     font-weight: lighter;
     white-space: nowrap;
@@ -396,33 +407,39 @@ right: -23px;
     overflow: hidden;
 } 
 #menu  .plat:hover p{
-    width:75%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     cursor: pointer;
 }
 .plat .prix{
+    width: 100%;
     height: 75px;
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .plat .prix b{
    font-size: 14px;
-   margin-left: 90% ;
-   position: relative;
-   top: -15px;
 }  
 .plat .prix:hover{
-    width: 90%;
-}                   
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}                          /* -------
+.scale-in-hor-right {
+	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-in-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}                              -------*/
 
                             /* animation check */
 #menu .check{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24%;
+    width: 73px;
     height: 75px;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
@@ -444,8 +461,8 @@ right: -23px;
 
 }
 @keyframes  check-animation {
-    0% { width: 20px;}
-    100% { width: 24%;}
+    0% { width: 0px; margin: 0 0 -50px 10px;}
+    100% { width: 73px; margin: 0 0 50px 10px;}
 }
 
                       /* fin animation check */
@@ -470,7 +487,7 @@ h4:hover{
     box-shadow:  3px 3px 3px 2px lightgrey;
     opacity: 0.8;
 }                         
-                                       /* Animation Menus..*/
+ 
 
     @keyframes progressif {
         0%  { margin-top: 60px;opacity:0;}
@@ -516,6 +533,6 @@ animation: progressif 1.4s linear 300ms forwards; opacity: 0;
 .desserts h2{
     animation: progressif 2.7s linear 300ms forwards; opacity: 0;
 }
-}
+
 
 

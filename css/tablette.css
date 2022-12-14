@@ -1,8 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
 
-  
-  body{
+    body{
         margin: auto;
     }
 #haut-de-page h1{
@@ -16,7 +15,7 @@
 }
 .reserver h3{
     width: 35%;
-    font-size: 16px;
+    font-size: 14px;
     margin: auto;
     margin-top: 30px;
 }
@@ -54,8 +53,7 @@
 }
 .carte{
     width: 35%;
-    margin: 25px;
-    box-shadow: grey 1px 1px 3px 1px;
+    margin: 15px;
 }
 .carte h2, p{
     font-size: 16px;
@@ -64,22 +62,24 @@
     position: relative;
     right: -75%;
  }
-.carte .coeur:hover .normal .fa-regular{ 
+ .coeur:hover .normal .fa-regular{ 
+    background: linear-gradient(180deg, #9356dc, #ff79da);
+    background-clip: text;
+   -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer;  
-    animation: remplissage 1.5s linear; 
 }                                 
 .carte .coeur .transition .fa-heart{
     font-weight: bold;
     color: white; 
 }
-.carte .coeur:hover .transition .fa-heart{                            
+.coeur:hover .transition .fa-heart{                            
    background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer;  
-    animation: remplissage 1.5s linear;
+    animation: remplissage 1s linear;
 } 
 
                     /* Menus ..*/
@@ -95,41 +95,53 @@
 #menu .coeur{
     margin-left: 15px;
 }
-#menu .coeur:hover .normal .fa-regular{ 
-    color: transparent; 
-    cursor: pointer; 
-    animation: remplissage 1.5s linear; 
-}                                 
-
-#menu .coeur .transition .fa-heart{
-    font-weight: bold;
-    color: #f2f2f2;
-}
-
-#menu .coeur:hover .transition .fa-heart{                            
-   background: linear-gradient(180deg, #9356dc, #ff79da);
-    background-clip: text;
-   -webkit-background-clip: text;
-    color: transparent; 
-    cursor: pointer;  
-    animation: remplissage 1.5s linear;
-} 
 #menu h2{
     font-size: 15px;
     width: 50%;
 }
-#menu h4{
-    width: 40%;
-}
-
+#menu .coeur{
+    position: relative;
+    top: -55px;
+    right: -75% ;
+    font-size: 24px;
+    color: black;
+    }
+    #menu .coeur .normal .fa-regular{
+    position: relative;
+    font-size: 24px;
+    right: -23px;
+    }  
+                             /* Couleur du Coeur ...*/
+    
+    #menu .coeur:hover .normal .fa-regular{ 
+        background: linear-gradient(180deg, #9356dc, #ff79da);
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent; 
+        cursor: pointer; 
+        pointer-events: auto;   
+    }                                 
+    #menu .coeur .transition .fa-heart{
+        font-size: 24px;
+        font-weight: bold;
+        color: #f2f2f2;  
+    }
+    #menu .coeur:hover .transition .fa-heart{                            
+       background: linear-gradient(180deg, #9356dc, #ff79da);
+        background-clip: text;
+       -webkit-background-clip: text;
+        color: transparent; 
+        cursor: pointer; 
+        pointer-events: auto;  
+        animation: remplissage 0.8s linear;
+    }
 footer .bas-de-page{
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 footer ul{
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 }
     
-
