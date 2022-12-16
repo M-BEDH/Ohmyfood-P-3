@@ -55,6 +55,7 @@ body{
     width: 35%;
     margin: 15px;
 }
+}
 .carte h2, p{
     font-size: 16px;
 }
@@ -79,7 +80,7 @@ body{
    -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer;  
-    animation: remplissage 1s linear;
+    animation: remplissage 0.8s linear;
 } 
 
                     /* Menus ..*/
@@ -103,13 +104,13 @@ body{
     position: relative;
     top: -55px;
     right: -75% ;
-    font-size: 24px;
+    font-size: 26px;
     color: black;
     }
     #menu .coeur .normal .fa-regular{
     position: relative;
-    font-size: 24px;
-    right: -23px;
+    font-size: 26px;
+    right: -26px;
     }  
                              /* Couleur du Coeur ...*/
     
@@ -122,7 +123,6 @@ body{
         pointer-events: auto;   
     }                                 
     #menu .coeur .transition .fa-heart{
-        font-size: 24px;
         font-weight: bold;
         color: #f2f2f2;  
     }

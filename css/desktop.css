@@ -1,4 +1,4 @@
-@media screen and (min-width:992px) and (max-width: 1920px)
+@media screen and (min-width:992px)
 {
 body{
     margin: 0 auto;
@@ -22,13 +22,20 @@ flex-wrap: wrap;
     padding-left: 20px;
     box-shadow: none;
 }
+#menu{
+    padding-left: 10px;
+}
 .carte{
     width: 40%;
     height: 250px;
     margin: auto;
     margin-bottom: 40px;
-    box-shadow: grey 2px 1px 1px 1px;
+    box-shadow: lightgray 1px 1px 1px 1px;
 }
+.carte .coeur{
+    position: relative;
+    right: -75%;
+ }
 .carte .coeur:hover .normal .fa-regular{ 
     background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
@@ -72,7 +79,6 @@ footer ul{
         pointer-events: auto;   
     }                                 
     #menu .coeur .transition .fa-heart{
-        font-size: 24px;
         font-weight: bold;
         color: #f2f2f2;  
     }

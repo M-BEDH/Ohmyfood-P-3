@@ -207,8 +207,8 @@ overflow: hidden;
 }                            
 .carte .coeur .normal .fa-regular{
     position: relative;
-    right: -22px;
-    font-size: 22px;  
+    right: -26px;
+    font-size: 26px;  
 }         
                                                       /* Couleur du Coeur ..*/
 .coeur:active .normal .fa-regular{ 
@@ -220,7 +220,7 @@ overflow: hidden;
     pointer-events: auto;   
 }                                 
 .carte .coeur .transition .fa-heart{
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     color:  white;  
 }
@@ -230,12 +230,13 @@ overflow: hidden;
    -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer; 
-    pointer-events: auto;  
-    animation: remplissage 1s linear;
+    pointer-events: auto;
+      
+    animation: remplissage 0.8s linear;
 }
 @keyframes remplissage {
-    0% {opacity: 0.1; }
-    100% {opacity: 1; }    
+    0% {opacity: 0.1;}
+    100% {opacity: 1;}    
 }
                                                      /* Fin Couleur Coeur..*/     
 footer{
@@ -323,8 +324,8 @@ footer a:hover{
     }
     #menu .coeur .normal .fa-regular{
     position: relative;
-    font-size: 24px;
-    right: -23px;
+    font-size: 26px;
+    right: -26px;
     }  
                              /* Couleur du Coeur ...*/
     
@@ -337,7 +338,7 @@ footer a:hover{
         pointer-events: auto;   
     }                                 
     #menu .coeur .transition .fa-heart{
-        font-size: 24px;
+        font-size: 26px;
         font-weight: bold;
         color: #f2f2f2;  
     }
