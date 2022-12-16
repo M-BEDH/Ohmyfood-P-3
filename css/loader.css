@@ -4,7 +4,7 @@
     margin: 0;
     opacity: 0;
     position: absolute;
-    background-color: whitesmoke;
+    background: white;
     animation: loader 1ms;
     animation-delay: 3.5s;
     animation-fill-mode: both;
