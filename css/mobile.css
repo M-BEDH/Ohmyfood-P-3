@@ -207,8 +207,8 @@ overflow: hidden;
 }                            
 .carte .coeur .normal .fa-regular{
     position: relative;
-    right: -26px;
-    font-size: 26px;  
+    right: -24px;
+    font-size: 24px;  
 }         
                                                       /* Couleur du Coeur ..*/
 .coeur:active .normal .fa-regular{ 
@@ -220,7 +220,7 @@ overflow: hidden;
     pointer-events: auto;   
 }                                 
 .carte .coeur .transition .fa-heart{
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     color:  white;  
 }
@@ -324,8 +324,8 @@ footer a:hover{
     }
     #menu .coeur .normal .fa-regular{
     position: relative;
-    font-size: 26px;
-    right: -26px;
+    font-size: 24px;
+    right: -24px;
     }  
                              /* Couleur du Coeur ...*/
     
@@ -338,7 +338,7 @@ footer a:hover{
         pointer-events: auto;   
     }                                 
     #menu .coeur .transition .fa-heart{
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
         color: #f2f2f2;  
     }
@@ -431,7 +431,7 @@ cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 73px;
+    width: 75px;
     height: 75px;
     border-radius: 0 20px 20px 0;
     background-color: transparent;
@@ -440,7 +440,7 @@ cursor: pointer;
 #menu .plat:hover .check{
     background-color: #99e2d0;
     transform: scale(1); 
-    animation: check-animation 0.4s ease-in-out;  
+    animation: check-animation 0.4s linear;  
 } 
 #menu .check .icone {
     color: transparent;
@@ -454,7 +454,7 @@ cursor: pointer;
 }
 @keyframes  check-animation {
     0% { width: 0px;}
-    100% { width: 73px;}
+    100% { width: 75px;}
 }
 
                       /* fin animation check */

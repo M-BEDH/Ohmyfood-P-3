@@ -85,9 +85,6 @@ body{
 
                     /* Menus ..*/
 
-.logo-restaurant img{
-    width: 180px;
-}
 .photo img{
     height: 300px;
     width: 100%;
@@ -104,13 +101,13 @@ body{
     position: relative;
     top: -55px;
     right: -75% ;
-    font-size: 26px;
+    font-size: 24px;
     color: black;
     }
     #menu .coeur .normal .fa-regular{
     position: relative;
-    font-size: 26px;
-    right: -26px;
+    font-size: 24px;
+    right: -24px;
     }  
                              /* Couleur du Coeur ...*/
     

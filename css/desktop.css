@@ -53,7 +53,7 @@ flex-wrap: wrap;
    -webkit-background-clip: text;
     color: transparent; 
     cursor: pointer;  
-    animation: remplissage 1s linear;
+    animation: remplissage 0.8s linear;
 } 
 .plat a .prix b{
     font-size: 14px;
