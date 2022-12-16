@@ -211,7 +211,7 @@ overflow: hidden;
     font-size: 24px;  
 }         
                                                       /* Couleur du Coeur ..*/
-.coeur:active .normal .fa-regular{ 
+.coeur:hover .normal .fa-regular{ 
     background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
@@ -224,7 +224,7 @@ overflow: hidden;
     font-weight: bold;
     color:  white;  
 }
-.coeur:active .transition .fa-heart{                            
+.coeur:hover .transition .fa-heart{                            
    background: linear-gradient(180deg, #9356dc, #ff79da);
     background-clip: text;
    -webkit-background-clip: text;
@@ -329,7 +329,7 @@ footer a:hover{
     }  
                              /* Couleur du Coeur ...*/
     
-    #menu .coeur:active .normal .fa-regular{ 
+    #menu .coeur:hover .normal .fa-regular{ 
         background: linear-gradient(180deg, #9356dc, #ff79da);
         background-clip: text;
        -webkit-background-clip: text;
@@ -342,7 +342,7 @@ footer a:hover{
         font-weight: bold;
         color: #f2f2f2;  
     }
-    #menu .coeur:active .transition .fa-heart{                            
+    #menu .coeur:hover .transition .fa-heart{                            
        background: linear-gradient(180deg, #9356dc, #ff79da);
         background-clip: text;
        -webkit-background-clip: text;
